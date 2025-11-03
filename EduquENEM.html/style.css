@@ -1,0 +1,137 @@
+:root {
+  --blue: #0b66b2;
+  --yellow: #f2b705;
+  --bg: #f7f9fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  font-family: 'Poppins', Roboto, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: #111; }
+
+header {
+  background: linear-gradient(90deg, var(--blue), #1a8ad6);
+  color: #fff;
+  padding: 18px 24px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+main { padding: 24px 0; }
+h2 { margin-top: 0; }
+p.lead { color: var(--muted); }
+
+.card {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(11, 102, 178, 0.06);
+  margin-bottom: 18px;
+}
+
+.btn {
+  background: var(--yellow);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: #111;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn.tertiary {
+  background-color: #ee1818;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: #111;
+}
+
+.btn.quaternery {
+  background-color: rgb(5, 70, 248);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: #111;
+}
+
+.btn.quintenary {
+  background-color: rgb(158, 63, 0);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: #111;
+}
+
+.btn.sextiary {
+  background-color: rgb(17, 100, 0);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: #111;
+}
+
+footer {
+  padding: 16px 24px;
+  background: #fff;
+  margin-top: 24px;
+}
+
+.muted { color: var(--muted); font-size: 14px; }
+
+@media (max-width: 600px) {
+  nav { flex-direction: column; align-items: flex-start; }
+}
